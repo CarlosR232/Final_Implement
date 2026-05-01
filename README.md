@@ -57,7 +57,7 @@ RABBIT CARE CODE
     </div>
 
     <div class="col-md-6 image-box">
-      <img src="IMG/rabbit.png" alt="Rabbit care">
+      <img src="img/rabbit.png" alt="Rabbit care">
     </div>
   </div>
 </div>
