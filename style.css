@@ -1,0 +1,166 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    /* Typography: Body -> Regular, 16-18px */
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 18px; 
+    font-weight: 400; 
+    
+    /* Background: clean / Text: dark gray/black */
+    background-color: #FFFFFF; 
+    color: #333333; 
+    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+/* Typography: Headings -> Bold, 32-48px */
+h1, h2, h3, h4, h5, h6, .care-title, .title-box {
+    font-weight: 700 !important; /* Bold */
+    color: #333333; 
+}
+
+/* All section headings strictly 36px */
+h1, h2, h3, h4, h5, h6, .display-3, .display-4, .display-5, .care-title {
+    font-size: 36px !important;
+}
+
+/* Ensure the main site title stays proportional and doesn't get huge */
+header h1 {
+    font-size: 24px !important;
+}
+
+/* HEADER */
+header {
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    color: #4A7C59 !important; /* Primary: Green */
+}
+
+/* NAV BUTTONS */
+.nav-buttons .btn {
+    background-color: transparent;
+    color: #333333;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.nav-buttons .btn:hover {
+    background-color: #4A7C59; /* Primary: Green */
+    color: white;
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* HERO */
+.hero-section {
+    min-height: calc(100vh - 80px); /* Adjust based on header height */
+    display: flex;
+    align-items: center;
+}
+
+.hero-content h2 {
+    display: inline-block;
+    color: #4A7C59 !important; /* Primary: Green */
+}
+
+/* EXPLORE CARDS */
+.explore-card {
+    background: white;
+    border-radius: 16px; /* Rounded corners */
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    color: #4A7C59; /* Primary: Green */
+    font-weight: 700;
+}
+
+.explore-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    border: 2px solid #E67E22; /* Accent: Orange border on hover */
+}
+
+a { text-decoration: none; }
+
+.section-spacing {
+    padding: 100px 0;
+}
+
+/* CARE */
+.care-section {
+    background-color: transparent;
+}
+
+.care-title {
+    color: #4A7C59 !important; /* Primary: Green */
+}
+
+.divider {
+    height: 4px;
+    background-color: #E67E22 !important; /* Accent: Orange */
+    border-radius: 2px;
+    margin: 20px 0;
+    width: 80px;
+}
+
+/* BUTTONS */
+/* Consistent style: Rounded corners, same color (Green) */
+.btn-custom {
+    background-color: #4A7C59 !important; /* Primary: Green */
+    color: white !important;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 8px; /* Rounded corners */
+    font-weight: 700;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.btn-custom:hover {
+    background-color: #3A4F41 !important; /* Darker Green hover */
+}
+
+/* DIET */
+.diet-section {
+    background-color: transparent;
+}
+
+.title-box {
+    background-color: #E67E22; /* Accent: Orange */
+    color: white;
+    border-radius: 8px; /* Rounded corners */
+    padding: 8px 16px;
+    display: inline-block;
+}
+
+/* ADOPTION */
+.adopt-section {
+    background-color: #FAF8F5; /* Very soft off-white background */
+}
+
+/* FOOTER */
+footer {
+    background-color: #FFFFFF;
+    color: #333333;
+    border-top: 1px solid #EAECE6;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+}
